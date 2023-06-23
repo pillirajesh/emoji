@@ -4,72 +4,73 @@ import Emoji from "./components/EmojiGame";
 const emojisList = [
   {
     id: 0,
-    emojiName: "Face with stuck out tongue",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/face-with-stuck-out-tongue-img.png",
+    heroName: "Prabash",
+    heroUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqY6wYPLwT-eoabLfCPM1zqw9dHN6to5VsUg74Bdddw&s",
   },
   {
     id: 1,
-    emojiName: "Face with head bandage",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/face-with-head-bandage-img.png",
+    heroName: "NTR",
+    heroUrl:
+      "https://assets.thehansindia.com/h-upload/2020/05/19/970337-jr-ntr.jpg",
   },
   {
     id: 2,
-    emojiName: "Face with hugs",
-    emojiUrl: "https://assets.ccbp.in/frontend/react-js/face-with-hugs-img.png",
+    heroName: "Allu Arjun",
+    heroUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ylVD6mbex5AN6DJch7z5BPtFsesY2eUbPdOBDjnE&s",
   },
   {
     id: 3,
-    emojiName: "Face with laughing",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/face-with-laughing-img.png",
+    heroName: "Pavan Kalyan",
+    heroUrl:
+      "https://www.telugu360.com/wp-content/uploads/2016/09/Suspense-on-Pawan-Kalyan-speech.jpg",
   },
   {
     id: 4,
-    emojiName: "Laughing face with hand in front of mouth",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/face-with-laughing-with-hand-infront-mouth-img.png",
+    heroName: "Vijay Devarakonda",
+    heroUrl:
+      "https://www.telugu360.com/wp-content/uploads/2019/03/Vijay-Devarakonda-Exhausted-and-Hospitalized.jpg",
   },
   {
     id: 5,
-    emojiName: "Face with mask",
-    emojiUrl: "https://assets.ccbp.in/frontend/react-js/face-with-mask-img.png",
+    heroName: "Ram Charan",
+    heroUrl: "https://igimages.gumlet.io/telugu/news/charan280318_1m-dd0.jpg",
   },
   {
     id: 6,
-    emojiName: "Face with silence",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/face-with-silence-img.png",
+    heroName: "Amir Khan",
+    heroUrl:
+      "https://d30ny7ijak9wq4.cloudfront.net/s3fs-public/images/story/2014/03/10/aamir-khan.jpg",
   },
   {
     id: 7,
-    emojiName: "Face with stuck out tongue and winked eye",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/face-with-stuck-out-tongue-and-winking-eye-img.png",
+    heroName: "Ravi Teja",
+    heroUrl:
+      "https://datatrained.com/dt-fun/wp-content/uploads/2023/02/ravi-teja-feature.jpg",
   },
   {
     id: 8,
-    emojiName: "Grinning face with sweat",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/grinning-face-with-sweat-img.png",
+    heroName: "Saif Ali Khan",
+    heroUrl:
+      "https://assets.telegraphindia.com/telegraph/2021/Nov/1637256878_saif-ali-khan.jpg",
   },
   {
     id: 9,
-    emojiName: "Smiling face with heart eyes",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/smiling-face-with-heart-eyes-img.png",
+    heroName: "Ajay Devgan",
+    heroUrl:
+      "https://akm-img-a-in.tosshub.com/indiatoday/images/story/201704/ajay-story_647_040217014607.jpg",
   },
   {
     id: 10,
-    emojiName: "Grinning face",
-    emojiUrl: "https://assets.ccbp.in/frontend/react-js/grinning-face-img.png",
+    heroName: "Mahesh Babu",
+    heroUrl:
+      "https://www.telugu360.com/wp-content/uploads/2022/02/Mahesh-Babu.jpg",
   },
   {
     id: 11,
-    emojiName: "Smiling face with star eyes",
-    emojiUrl:
-      "https://assets.ccbp.in/frontend/react-js/smiling-face-with-star-eyes-img.png",
+    heroName: "Ram Potineni",
+    heroUrl: "https://cdn.sharechat.com/385ac020_1621013538108_sc.jpeg",
   },
 ];
 

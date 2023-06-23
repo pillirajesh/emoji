@@ -34,7 +34,7 @@ class Emoji extends Component {
     return emojisList.sort(() => Math.random() - 0.5);
   };
 
-  clickEmoji = (id) => {
+  clickHero = (id) => {
     const { emojisList } = this.props;
     const { clickedEmojisList } = this.state;
     const emojiPresent = clickedEmojisList.includes(id);
@@ -61,7 +61,7 @@ class Emoji extends Component {
           <EmojiCard
             cardDetails={eachEmoji}
             key={eachEmoji.id}
-            clickEmoji={this.clickEmoji}
+            clickHero={this.clickHero}
           />
         ))}
       </ul>
