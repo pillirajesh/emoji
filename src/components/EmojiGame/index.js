@@ -35,7 +35,6 @@ class Emoji extends Component {
   };
 
   clickEmoji = (id) => {
-    console.log(id);
     const { emojisList } = this.props;
     const { clickedEmojisList } = this.state;
     const emojiPresent = clickedEmojisList.includes(id);
