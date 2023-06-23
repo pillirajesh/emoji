@@ -37,6 +37,11 @@
 
   .score-container {
     font-size: 17px;
-    width: 40%;
+    width: 50%;
+    padding-right: 20px;
+  }
+
+  .logo-container {
+    padding-left: 20px;
   }
 }
