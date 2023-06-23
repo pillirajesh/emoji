@@ -1,0 +1,42 @@
+.navbar {
+  height: 10vh;
+  width: 100%;
+  background-color: #9796f0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+}
+
+.score-container {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-right: 30px;
+  width: 50%;
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-heading {
+  color: white;
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-heading {
+    font-size: 17px;
+    width: 100%;
+  }
+
+  .score-container {
+    font-size: 17px;
+    width: 40%;
+  }
+}
