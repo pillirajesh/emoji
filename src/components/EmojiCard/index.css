@@ -1,18 +1,15 @@
 .emoji-card {
   list-style-type: none;
-  width: 15%;
-  background-color: #ffffff33;
+  width: 20%;
   margin-right: 30px;
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  border-radius: 5px;
-  border: 1px solid #ffffff30;
 }
 
 .image {
   width: 100%;
+  border-radius: 5px;
 }
 
 .button {
@@ -20,4 +17,12 @@
   border: none;
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (max-width: 767px) {
+  .emoji-card {
+    width: 30%;
+    margin-right: 7px;
+    margin-bottom: 15px;
+  }
 }

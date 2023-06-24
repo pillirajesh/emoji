@@ -34,7 +34,7 @@ const WinOrLoss = (props) => {
         <div>
           <h1>You Lose</h1>
           <h3>Best Score</h3>
-          <h3 style={{ color: "#6a59ff", fontWeight: "bold" }}>{score}/12</h3>
+          <h3 style={{ color: "red", fontWeight: "bold" }}>{score}/12</h3>
           <button className="play-button" type="button" onClick={setGame}>
             Play Again
           </button>

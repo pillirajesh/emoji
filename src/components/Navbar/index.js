@@ -9,11 +9,14 @@ const Navbar = (props) => {
         <img
           src="https://assets.ccbp.in/frontend/react-js/game-logo-img.png"
           alt="emoji-logo"
+          className="logo"
         />
         <h2 className="navbar-heading">Memory Game</h2>
       </div>
       <div className="score-container">
-        <p style={{ marginRight: "20px" }}>Score: {currentScore}</p>
+        <p style={{ marginRight: "20px" }}>
+          Score: <span style={{ fontWeight: "bold" }}>{currentScore}</span>
+        </p>
         <p>Top Score: {topScore}</p>
       </div>
     </div>

@@ -4,9 +4,8 @@ import Emoji from "./components/EmojiGame";
 const emojisList = [
   {
     id: 0,
-    heroName: "Prabash",
-    heroUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqY6wYPLwT-eoabLfCPM1zqw9dHN6to5VsUg74Bdddw&s",
+    heroName: "Siddharth",
+    heroUrl: "https://wi.wallpapertip.com/wsimgs/47-475297_hero-siddharth.jpg",
   },
   {
     id: 1,
@@ -18,7 +17,7 @@ const emojisList = [
     id: 2,
     heroName: "Allu Arjun",
     heroUrl:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2ylVD6mbex5AN6DJch7z5BPtFsesY2eUbPdOBDjnE&s",
+      "https://image3.mouthshut.com/images/ImagesR/2017/11/925872177-7967769-1.jpg?rnd=10356",
   },
   {
     id: 3,
@@ -51,9 +50,9 @@ const emojisList = [
   },
   {
     id: 8,
-    heroName: "Saif Ali Khan",
+    heroName: "Shahid kapoor",
     heroUrl:
-      "https://assets.telegraphindia.com/telegraph/2021/Nov/1637256878_saif-ali-khan.jpg",
+      "https://i.pinimg.com/736x/1d/bb/d8/1dbbd8e99a3f222021beccb88a651307.jpg",
   },
   {
     id: 9,
