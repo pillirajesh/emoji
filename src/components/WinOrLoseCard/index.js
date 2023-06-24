@@ -13,8 +13,8 @@ const WinOrLoss = (props) => {
       <div className="win-loose-container">
         <div>
           <h1>You Won</h1>
-          <p>Best Score</p>
-          <p>12/{score}</p>
+          <h3>Best Score</h3>
+          <h3 style={{ color: "red", fontWeight: "bold" }}>{score}/12</h3>
           <button className="play-button" type="button" onClick={setGame}>
             Play Again
           </button>

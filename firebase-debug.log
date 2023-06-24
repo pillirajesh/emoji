@@ -1,0 +1,111 @@
+[debug] [2023-06-24T04:36:05.876Z] ----------------------------------------------------------------------
+[debug] [2023-06-24T04:36:05.882Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-06-24T04:36:05.883Z] CLI Version:   12.4.0
+[debug] [2023-06-24T04:36:05.885Z] Platform:      win32
+[debug] [2023-06-24T04:36:05.885Z] Node Version:  v18.13.0
+[debug] [2023-06-24T04:36:05.888Z] Time:          Sat Jun 24 2023 10:06:05 GMT+0530 (India Standard Time)
+[debug] [2023-06-24T04:36:05.888Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-24T04:36:06.047Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-24T04:36:06.048Z] > authorizing via signed-in user (pillirajesh05@gmail.com)
+[debug] [2023-06-24T04:36:06.048Z] [iam] checking project emojigame-6b088 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-24T04:36:06.052Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/emojigame-6b088:testIamPermissions [none]
+[debug] [2023-06-24T04:36:06.052Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/emojigame-6b088:testIamPermissions x-goog-quota-user=projects/emojigame-6b088
+[debug] [2023-06-24T04:36:06.053Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/emojigame-6b088:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-24T04:36:10.049Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/emojigame-6b088:testIamPermissions 200
+[debug] [2023-06-24T04:36:10.051Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/emojigame-6b088:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2023-06-24T04:36:10.055Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/emojigame-6b088 [none]
+[debug] [2023-06-24T04:36:12.900Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/emojigame-6b088 200
+[debug] [2023-06-24T04:36:12.900Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/emojigame-6b088 {"projectId":"emojigame-6b088","projectNumber":"546785123531","displayName":"EmojiGame","name":"projects/emojigame-6b088","resources":{"hostingSite":"emojigame-6b088"},"state":"ACTIVE","etag":"1_32f9463e-c62a-4c62-90fc-61f934e6f94d"}
+[info] 
+[info] === Deploying to 'emojigame-6b088'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2023-06-24T04:36:12.927Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions [none]
+[debug] [2023-06-24T04:36:12.928Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2023-06-24T04:36:16.582Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions 200
+[debug] [2023-06-24T04:36:16.582Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions {"name":"projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64","status":"CREATED","config":{},"labels":{"deployment-tool":"cli-firebase"}}
+[info] i  hosting[emojigame-6b088]: beginning deploy... 
+[info] i  hosting[emojigame-6b088]: found 7 files in build 
+[debug] [2023-06-24T04:36:16.623Z] [hosting] uploading with 200 concurrency
+[debug] [2023-06-24T04:36:16.830Z] [hosting] hash cache [YnVpbGQ] stored for 7 files
+[debug] [2023-06-24T04:36:16.831Z] [hosting][hash queue][FINAL] {"max":172,"min":30,"avg":57,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":196}
+[debug] [2023-06-24T04:36:16.833Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64:populateFiles [none]
+[debug] [2023-06-24T04:36:16.833Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64:populateFiles {"files":{"/asset-manifest.json":"8b5e26156090e49dfe8e0feaeda9247a0485f77469ab3c701b272651e13581ee","/index.html":"ee363e9d2f3b586b90cd978e8520a82404824426a22d603e2075dc6828f3862e","/static/css/main.41ffba3a.css":"bf4f4dc88ac024680c639c759e65c4ed3fed66814320d94814c8a19d41a96586","/static/css/main.41ffba3a.css.map":"dbfb8f08eee86a5c26c3b0068579b83ec2f16a6620c55ed9b9af4f31baaf1c74","/static/js/main.5c651eb3.js.LICENSE.txt":"a1e10079e8155bc5525d13d0464e64acbd892cb93e51621cce5f31f1c4cc8fe3","/static/js/main.5c651eb3.js":"5eaadae2a3c6ed86203d66eaf4aa8719190951e2bc6aca9050cf9db2e68b0401","/static/js/main.5c651eb3.js.map":"251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a"}}
+[debug] [2023-06-24T04:36:18.828Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64:populateFiles 200
+[debug] [2023-06-24T04:36:18.828Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64:populateFiles {"uploadRequiredHashes":["5eaadae2a3c6ed86203d66eaf4aa8719190951e2bc6aca9050cf9db2e68b0401","251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a","8b5e26156090e49dfe8e0feaeda9247a0485f77469ab3c701b272651e13581ee","ee363e9d2f3b586b90cd978e8520a82404824426a22d603e2075dc6828f3862e"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files"}
+[debug] [2023-06-24T04:36:18.832Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/5eaadae2a3c6ed86203d66eaf4aa8719190951e2bc6aca9050cf9db2e68b0401 [none]
+[debug] [2023-06-24T04:36:18.832Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/5eaadae2a3c6ed86203d66eaf4aa8719190951e2bc6aca9050cf9db2e68b0401 [stream]
+[debug] [2023-06-24T04:36:18.836Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [none]
+[debug] [2023-06-24T04:36:18.836Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:36:18.840Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/8b5e26156090e49dfe8e0feaeda9247a0485f77469ab3c701b272651e13581ee [none]
+[debug] [2023-06-24T04:36:18.841Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/8b5e26156090e49dfe8e0feaeda9247a0485f77469ab3c701b272651e13581ee [stream]
+[debug] [2023-06-24T04:36:18.846Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/ee363e9d2f3b586b90cd978e8520a82404824426a22d603e2075dc6828f3862e [none]
+[debug] [2023-06-24T04:36:18.846Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/ee363e9d2f3b586b90cd978e8520a82404824426a22d603e2075dc6828f3862e [stream]
+[debug] [2023-06-24T04:36:18.853Z] [hosting][populate queue][FINAL] {"max":2009,"min":2009,"avg":2009,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2032}
+[debug] [2023-06-24T04:36:18.854Z] [hosting] uploads queued: 4
+[debug] [2023-06-24T04:36:24.359Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/ee363e9d2f3b586b90cd978e8520a82404824426a22d603e2075dc6828f3862e 200
+[debug] [2023-06-24T04:36:24.359Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/ee363e9d2f3b586b90cd978e8520a82404824426a22d603e2075dc6828f3862e [stream]
+[debug] [2023-06-24T04:36:24.625Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/8b5e26156090e49dfe8e0feaeda9247a0485f77469ab3c701b272651e13581ee 200
+[debug] [2023-06-24T04:36:24.625Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/8b5e26156090e49dfe8e0feaeda9247a0485f77469ab3c701b272651e13581ee [stream]
+[debug] [2023-06-24T04:36:44.023Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/5eaadae2a3c6ed86203d66eaf4aa8719190951e2bc6aca9050cf9db2e68b0401 200
+[debug] [2023-06-24T04:36:44.024Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/5eaadae2a3c6ed86203d66eaf4aa8719190951e2bc6aca9050cf9db2e68b0401 [stream]
+[debug] [2023-06-24T04:36:49.254Z] [uploadQueue] Retrying task 251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a
+[debug] [2023-06-24T04:36:49.257Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [none]
+[debug] [2023-06-24T04:36:49.257Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:37:20.073Z] [uploadQueue] Retrying task 251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a
+[debug] [2023-06-24T04:37:20.075Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [none]
+[debug] [2023-06-24T04:37:20.075Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:37:32.933Z] [uploadQueue] Retrying task 251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a
+[debug] [2023-06-24T04:37:32.935Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [none]
+[debug] [2023-06-24T04:37:32.935Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:38:06.161Z] [uploadQueue] Retrying task 251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a
+[debug] [2023-06-24T04:38:06.163Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [none]
+[debug] [2023-06-24T04:38:06.163Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:38:23.852Z] [uploadQueue] Retrying task 251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a
+[debug] [2023-06-24T04:38:23.854Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [none]
+[debug] [2023-06-24T04:38:23.854Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:38:34.677Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a 200
+[debug] [2023-06-24T04:38:34.678Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/emojigame-6b088/versions/2527dcd81a3abf64/files/251a2d9817ec211cba7b741d92e1954dd77c1d2c304533d932a165f1e427e57a [stream]
+[debug] [2023-06-24T04:38:34.679Z] [hosting][upload queue][FINAL] {"max":25195,"min":5528,"avg":11835.75,"active":0,"complete":4,"success":4,"errored":0,"retried":5,"total":4,"elapsed":135850}
+[info] +  hosting[emojigame-6b088]: file upload complete 
+[debug] [2023-06-24T04:38:34.683Z] [hosting] deploy completed after 138096ms
+[debug] [2023-06-24T04:38:34.694Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "site": "emojigame-6b088"
+    },
+    "version": "projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64"
+  }
+]
+[info] i  hosting[emojigame-6b088]: finalizing version... 
+[debug] [2023-06-24T04:38:34.704Z] >>> [apiv2][query] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions/2527dcd81a3abf64 updateMask=status%2Cconfig
+[debug] [2023-06-24T04:38:34.705Z] >>> [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions/2527dcd81a3abf64 {"status":"FINALIZED","config":{}}
+[debug] [2023-06-24T04:38:35.903Z] <<< [apiv2][status] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions/2527dcd81a3abf64 200
+[debug] [2023-06-24T04:38:35.904Z] <<< [apiv2][body] PATCH https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/versions/2527dcd81a3abf64 {"name":"projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-06-24T04:36:16.373470Z","createUser":{"email":"pillirajesh05@gmail.com"},"finalizeTime":"2023-06-24T04:38:35.934027Z","finalizeUser":{"email":"pillirajesh05@gmail.com"}}
+[debug] [2023-06-24T04:38:35.905Z] [hosting] finalized version for emojigame-6b088:[object Object]
+[info] +  hosting[emojigame-6b088]: version finalized 
+[info] i  hosting[emojigame-6b088]: releasing new version... 
+[debug] [2023-06-24T04:38:35.909Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/channels/live/releases versionName=projects%2F546785123531%2Fsites%2Femojigame-6b088%2Fversions%2F2527dcd81a3abf64
+[debug] [2023-06-24T04:38:35.909Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/channels/live/releases {}
+[debug] [2023-06-24T04:38:37.284Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/channels/live/releases 200
+[debug] [2023-06-24T04:38:37.284Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/emojigame-6b088/channels/live/releases {"name":"projects/546785123531/sites/emojigame-6b088/channels/live/releases/1687581516623000","version":{"name":"projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-06-24T04:36:16.373470Z","createUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"},"finalizeTime":"2023-06-24T04:38:35.934027Z","finalizeUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}},"type":"DEPLOY","releaseTime":"2023-06-24T04:38:36.623Z","releaseUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}}
+[debug] [2023-06-24T04:38:37.285Z] [hosting] release: {"name":"projects/546785123531/sites/emojigame-6b088/channels/live/releases/1687581516623000","version":{"name":"projects/546785123531/sites/emojigame-6b088/versions/2527dcd81a3abf64","status":"FINALIZED","config":{},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2023-06-24T04:36:16.373470Z","createUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"},"finalizeTime":"2023-06-24T04:38:35.934027Z","finalizeUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}},"type":"DEPLOY","releaseTime":"2023-06-24T04:38:36.623Z","releaseUser":{"email":"pillirajesh05@gmail.com","imageUrl":"https://lh3.googleusercontent.com/a/AAcHTteHl5uSCA5fSelDlD7gPVmcixJxn82dVR5PjAWKjQ"}}
+[info] +  hosting[emojigame-6b088]: release complete 
+[info] 
+[info] +  Deploy complete! 
+[info] 
+[info] Project Console: https://console.firebase.google.com/project/emojigame-6b088/overview
+[info] Hosting URL: https://emojigame-6b088.web.app
+[debug] [2023-06-24T04:39:08.371Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\Lenovo\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:564:17)
+    at process.processTimers (node:internal/timers:507:7)
+[error] 
+[error] Error: An unexpected error has occurred.
